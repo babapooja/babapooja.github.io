@@ -24,6 +24,11 @@ body {
   z-index: 999;
 }
 
+#main-doc {
+  position: relative;
+  top: 49px;
+}
+
 nav {
   height: 100%;
   display: flex;
@@ -51,7 +56,7 @@ h1 {
 
 /* WELCOME SECTION */
 #welcome-section {
-  height: 90vh;
+  height: auto;
   background-color: #000;
   background-image: linear-gradient(45deg, #3A3D40 0%, #181719 100%);
   display: flex;
@@ -59,6 +64,7 @@ h1 {
   justify-content: center;
   align-items: center;
   scroll-margin-top: 50px;
+  padding: 35px;
 }
 
 #welcome-section img {
@@ -75,12 +81,13 @@ h1 {
   color: #BE3144;
   font-size: 1.5em;
   margin: 5px 0 0 0;
+  width: 75%;
+  text-align: center;
 }
 
 /* PROJECTS SECTION */
 #projects {
   background-color: #45567D;
-  margin-top: -20px;
   color: #F0F0F0;
   padding: 30px;
   scroll-margin-top: 50px;
@@ -179,12 +186,15 @@ button:hover {
 /* FOOTER SECTION */
 #contact {
   padding: 3%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   color: #F0F0F0;
   background-color: #303841;
   scroll-margin-top: 50px;
+  position: relative;
+  margin-top: 48px;
 }
 
 #contact header {
@@ -240,12 +250,58 @@ button:hover {
   background-color: rgba(0,0,0,0.7);
 }
 
+/* NAVIGATION */
+.fa-bars {
+  display: none;
+}
+
 
 @media (max-width: 771px) {
+
+  /* navigation */
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #welcome-section header{
+    font-size: 2.3em;
+  }
+
+  #welcome-section p{
+    font-size: 1em;
+  }
+
+  #welcome-section img {
+    max-width: 100px;
+    width: 100%;
+  }
+
   .project-card:hover {
     transform: none;
   }
+
+  #projects h1 {
+    margin-bottom: 10px;
+  }
+
+  #contact header {
+    font-size: 1.5em;
+  }
   
+  #contact a {
+    font-size: 1em;
+    margin-left: 5px;
+  }
+
   #social-sites {
     display: flex;
     flex-direction: column;
@@ -256,3 +312,9 @@ button:hover {
   }
   
 }
+/* 
+@media (min-width: 772px) {
+  #welcome-section {
+    height: 90vh;
+  }
+} */
