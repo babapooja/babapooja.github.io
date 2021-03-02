@@ -1,3 +1,8 @@
+:root {
+  --main-white: #F0F0F0;
+  --fancy-red: #BE3144;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,7 +21,7 @@ body {
 #nav {
   height: 50px;
   width: 100%;
-  background-color: #BE3144;
+  background-color: var(--fancy-red);
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -270,7 +275,7 @@ button:hover {
 }
 
 
-@media (max-width: 771px) {
+@media screen and (max-width: 771px) {
 
   button:hover {
     transform: none;
