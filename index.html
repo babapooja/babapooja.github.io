@@ -9,9 +9,11 @@
 	<!-- font family -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-	<!-- style sheet -->
+	<!-- style sheet and favicons -->
 	<link rel="stylesheet" href="styles.css">
-	<meta content="2; url=index.html">
+	<link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico">
+	<!-- <meta content=""> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, 2; url=index.html">
 </head>
 
 <body>
@@ -21,6 +23,7 @@
 			<a href="#welcome-section">About</a>
 			<a href="#projects">Work</a>
 			<a href="#contact">Contact</a>
+			<a target="_blank" href="assets/Pooja Baba Resume.pdf">Resume</a>
 		</nav>
 	</header>
 	<!--- MAIN CONTENT --->
@@ -29,25 +32,77 @@
 		<section id="welcome-section" class="main-section">
 			<img src="https://media-exp1.licdn.com/dms/image/C5603AQGb-dOEdNKbSA/profile-displayphoto-shrink_200_200/0/1614149785198?e=1620259200&v=beta&t=-NMXnlBVqxihM2FbL4U30xzWdkYsEvEoG2lsaesbO04"
 				alt="poojasphoto">
-				<header>Hi! I am,</header>
-			<h1>Pooja Baba</h1>
+				<h1>Hi! I am,</h1>
+			<header>Pooja Baba</header>
 			<p class="summary">
-				<em>a web developer</em>
+				I am a web developer based in Pune, India. I am a full stack enthusiast with focus areas in Angular, ReactJS, Python, NodeJs. I have been working in ZS Associates for past 3 years as a web developer in pharma domain.
 			</p>
+			<div class="button"><a target="_blank" href="assets/docs/Pooja Baba Resume.pdf"><button>Resume &nbsp;<i class="fas fa-file"></i></button></a></div>
+			
+		</section>
+
+
+		<!-- EXPERIENCE -->
+		<section class="main-section" id="experience">
+			<h1>Experience</h1>
+			<div class="details">
+				<h3><a target="_blank" href="https://www.zs.com/"><img alt="zs-logo" src="assets/images/zs-logo.png" width="50" height="50"/></a> ZS Associates Pvt. Ltd., Pune, India</h3>
+				<p><small>(Promoted) </small>Business Technology Solutions Associate Consultant - Dec '20 to present</p>
+				<p>Business Technology Analyst - Web Developer - Mar '18 to Dec '20</p>
+				<ul>
+					<li>
+						Actively worked in a agile software development methodology which followed scrum culture to deliver web applications integrated with REST APIs.
+					</li>
+					<li>
+						Worked with teams on complex projects delivering with strict deadlines. Collaborated with API developers to design APIs.
+					</li>
+					<li>
+						Worked on SSO authentication - OKTA, PING. Generated reports on UI using echarts, highmaps, highcharts, visjs.
+					</li>
+					<li>
+						Implemented a backend in python web-framework flask, for a learner dashboard delivered at firm level.
+					</li>
+					<li>
+						Along with KTLO team, onboared client developers to the project. Highly engaged with the clients to deliver the project implemented in sprints.	Worked closely with th e UX team to refine the mockups to meet the implementation feasibility.
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="details">
+				<h3><a href="https://logiquad.com/" target="_blank"><img alt="lq-logo" src="assets/images/lq-logo.png" width="50" height="50"/></a> Logiquad Solutions, Pune, India</h3>	
+				<p>Software Developer - Jun '17 to Mar '18</p>
+				<ul>
+					<li>As a software developer worked on CMS - Drupal to build websites - Trade Show News Network (TSNN), LawhelpCA and Corporate Event News (CEN). </li>
+					<li>Contributed to creating complex custom modules - such as breadcrumbs- in Drupal using JavaScript,PHP.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- EDUCATION -->
+		<section class="main-section" id="education">
+			<h1>Education</h1>
+			<div class="details">
+				<h3><a target="_blank" href="http://www.mitpune.com/"><img alt="mit-logo" src="assets/images/mit-pune.jfif" width="50" height="50"/></a> MAEER's Maharashtra Institute of Technology, Pune</h3>
+				<p>Bachelor of Engineering in Computer Engineering - 2013 to 2017</p>
+				<p class="course-details">Coursework: Database Management Systems, Design & Analysis of Algorithms, High Performance Computing, Operating System & Design, Computer Networks</p>
+				<p class="grades"><strong>Grades: 74.2%, First class with Distinction</strong></p>
+			</div>
 		</section>
 
 		<!-- PROJECTS SECTION -->
 		<section class="main-section" id="projects">
-			<h1><u>These are some of my projects</u></h1>
+			<h1>My notable contributions...</h1>
 			<section id="project-container">
-				<a target="_blank" href="https://codepen.io/babapooja/pen/ExNQJPm">
+				<!-- MEDIUM LINK -->
+				<a target="_blank" href="https://babapooja.medium.com/">
 					<section class="project-card">
-						<img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
-							alt="tribute page" />
+						<img src="assets/images/medium_profile.JPG"
+							alt="medium page" />
 						<div class="project-title">
-							<p>&lt;</p>
-							<header>&nbsp;&nbsp;Tribute Page&nbsp;&nbsp;</header>
-							<p>/ ></p>
+							<!-- <p>&lt;</p> -->
+							<header>&nbsp;&nbsp;Medium Profile&nbsp;&nbsp;</header>
+							<!-- <p>/ ></p> -->
 						</div>
 					</section>
 				</a>
@@ -88,8 +143,10 @@
 					</section>
 				</a>
 			</section>
-			<div id="button"><a target="_blank" href="https://github.com/babapooja"><button>Show All &gt;</button></a></div>
+			<!-- <div class="button"><a target="_blank" href="https://github.com/babapooja"><button>Show All &gt;</button></a> -->
+			</div>
 		</section>
+
 	</main>
 	<!-- FOOTER -->
 	<footer id="contact">
@@ -106,15 +163,11 @@
 			</div>
 
 			<div class="social-site">
-				<i class="fas fa-envelope"></i>
-				<a target="_blank" href="mailto: babapooja6@gmail.com">Send an email</a>
-			</div>
-
-			<div class="social-site">
 				<i class="fab fa-instagram"></i>
 				<a target="_blank" href="https://www.instagram.com/baba__pooja/">Instagram</a>
 			</div>
 		</div>
+		<small>&copy;&nbsp;Copyright 2021, Pooja Baba</small>
 	</footer>
 </body>
 <html>
