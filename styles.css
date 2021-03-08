@@ -26,7 +26,7 @@ body {
 
 /*********************************** HEADER SECTION ***********************************/
 #nav {
-  height: 50px;
+  height: 75px;
   width: 100%;
   background-color: var(--fancy-red);
   display: flex;
@@ -78,15 +78,17 @@ background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   scroll-margin-top: 50px;
-  padding: 35px;
+  padding: 5% 15%;
 }
 
 
 #welcome-section img {
   border-radius: 50%;
+  height: 250px;
+  margin-bottom: 30px;
 }
 
 #welcome-section header{
@@ -397,7 +399,8 @@ button:hover {
   }
 
   #welcome-section img {
-    max-width: 100px;
+    max-width: 200px;
+    height: auto;
     width: 100%;
   }
 
@@ -429,6 +432,11 @@ button:hover {
   
   .social-site {
     margin-bottom: 5px;
+  }
+
+  .details {
+    max-width: 100%;
+    padding: 3%;
   }
   
 }
