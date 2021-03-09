@@ -8,6 +8,7 @@
   --border-color-light: #dedede;
   --border-color-dark: #222831;
   --orange: #FF7F50;
+  --font-family: 'Raleway';
 }
 
 * {
@@ -16,7 +17,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family), sans-serif;
 }
 
 body {
@@ -263,7 +264,7 @@ a {
 button {
     border: none;
     outline: none;
-    background-color: #3A3D40;
+    background-color: var(--section-bg-color-1);
     transition: all .2s ease-out;
     color: var(--main-white);
     font-weight: 400;
@@ -285,7 +286,7 @@ button:hover {
 
 /*********************************** FOOTER SECTION ***********************************/
 #contact {
-  padding: 3% 3% 0.5% 3%;
+  padding: 3% 3% 1% 3%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -305,7 +306,7 @@ button:hover {
   margin-top: 1.2em;
   display: flex;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .social-site {
@@ -330,6 +331,32 @@ button:hover {
   color: var(--main-white);
   font-weight:bold;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+input, textarea {
+  padding: 7px 10px;
+  height: 34px;
+  border-radius: 5px; 
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  font-family: var(--font-family), sans-serif;
+  font-weight: bold;
+}
+
+textarea {
+  height: 150px;
+}
+
+footer button:hover {
+  transform: none;
+}
+
 
 /*********************************** SCROLLBAR STYLING ***********************************/
 ::-webkit-scrollbar {
@@ -425,11 +452,6 @@ button:hover {
     margin-left: 5px;
   }
 
-  #social-sites {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .social-site {
     margin-bottom: 5px;
   }
@@ -438,11 +460,11 @@ button:hover {
     max-width: 100%;
     padding: 3%;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
   
 }
-/* 
-@media (min-width: 772px) {
-  #welcome-section {
-    height: 90vh;
-  }
-} */
