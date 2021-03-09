@@ -1,3 +1,6 @@
 # Pooja Baba's profile
 
-This is a react project in which I have created my profile consiting of my skill sets, job experience and project work.
+This page is created using HTML, CSS. I have created this page to display my profile information in brief.
+
+You can view the profile at - https://babapooja.github.io/
+
