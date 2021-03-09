@@ -12,7 +12,6 @@
 	<!-- style sheet and favicons and scripts -->
 	<link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico">
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<!-- <meta content=""> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, 2; url=index.html">
 </head>
@@ -151,9 +150,9 @@
 	</main>
 	<!-- FOOTER -->
 	<footer id="contact">
-		<form>
-			<input id="email" type="email" required placeholder="Email your address" value=''/>
-			<textarea id="message" required type="text" placeholder="Enter your message here..." value=''></textarea>
+		<form method="post" action="https://formspree.io/f/xaylrngr">
+			<input name="Email Address" id="email" type="email" required placeholder="Email your address" value=''/>
+			<textarea id="message" name="Email Message" required type="text" placeholder="Enter your message here..." value=''></textarea>
 			<button id="sendEmail" type="submit">Send Message</button>
 		</form>
 		<div id="social-sites">
@@ -171,25 +170,5 @@
 		</div>
 		<small>&copy;&nbsp;Copyright 2021, Pooja Baba</small>
 	</footer>
-	<script type="text/javascript">
-		setTimeout(()=>{
-			document.querySelector('#sendEmail').addEventListener('click', (event) => {
-        event.preventDefault();
-        const emailAddress = document.querySelector('input').value;
-        const emailMessage = document.querySelector('textarea').value;
-        Email.send({
-			SecureToken: 'fab82e62-5340-4284-b755-0dd5e7203d9d',
-            To: 'babapooja6@gmail.com',
-			From: emailAddress,
-			Subject: 'Viewed your website! Would like to connect.',
-			Body: emailMessage
-        }).then(message => {
-			alert(message);
-			document.querySelector('input').value='';
-			document.querySelector('textarea').value = '';
-		})
-    });
-		},2000);
-	</script>
 </body>
 <html>
